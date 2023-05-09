@@ -1,12 +1,14 @@
-.teste {
-    margin:0px;
+
+.ste {
+    background-color: #f1f1f1;
+  
+
+    width: 140px;
+    border: 1px solid #111;
+ 
 }
 
 body {
-    padding:0px;
+    margin:0px;
 }
 
-*{
-    margin:0px;
-    padding:0px;
-}
