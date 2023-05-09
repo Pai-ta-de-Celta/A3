@@ -1,14 +1,48 @@
 
-.ste {
-    background-color: #f1f1f1;
-  
+.cabe{
+    
+    padding-left: 50px;
+    background-color: #3b8962;
+    height: 60px;
+    text-align: center;
+    
+    
+}
 
-    width: 140px;
-    border: 1px solid #111;
+.corpo {
+    background-color: #49705d; 
+    height: 1000px;
+}
+.cPes {
  
+    left: 10%;
+    bottom: 675px;
+    width: 185px;
+
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+
+.cbut {
+    background-color: #857f7f;
+    
+    left: 22%;
+    bottom: 675px;
+    width: 35px;
+
+    position: absolute;
+    border-radius: 4px;
+
 }
 
 body {
     margin:0px;
 }
+
+img{
+    max-width: 100%;
+}
+
 
