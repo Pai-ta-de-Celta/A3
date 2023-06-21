@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Turismo em Laguna</title>
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css.css" media="screen">
+
 </head>
 <body>
-  <header>
+  <header id="cabecalho">
       <div class="header-container">
-        <img src="./imagens/tresriscos.png" alt="Logo" class="header-logo">
+        <img src="imagens/tresriscos.png" alt="Logo" class="header-logo" onclick="abrirMenuLateral()">
         <div class="search-bar">
           <input type="text" class="search-input" placeholder="Pesquisar por outra cidade">
           <button class="search-button">Pesquisar</button>
         </div>
       </div>
     </header>
-  <h1 class="title">Pontos Turísticos de Santa Catarina</h1> <!-- Movido o título para cima da tag <main> -->
-  <main>
+    
+    <nav id="menuLateral">
+      
+      <a href="#" onclick="fecharMenuLateral()"> Fechar</a>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Contato</a>
+      
+    </nav>
+    
+    <h1 class="title">Pontos Turísticos de Santa Catarina</h1>
+  
+    <main id="conteudo">
 
     <div class="sections-container" >
     <div class="section" id="Laguna" >
@@ -56,11 +68,13 @@
 
     </div>
   </div>
-
- 
-
   </main>
 
+  <footer>Agencia Turismo - Todos os direitos Reservados - 2023 &copy
+    <br><br>
+    <adress>R. Gothard Kaesemodel, 833</adress>
+    <p>Contate nos: (47) 4002-8922 &#9742</p>
+  </footer>
   
 </body>
 </html>

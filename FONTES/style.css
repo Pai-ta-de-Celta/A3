@@ -1,4 +1,6 @@
 
+
+
 .cabe{
     
     padding-left: 50px;
@@ -114,6 +116,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .header-logo:hover{
+    cursor: pointer;
+  }
   
   @media screen and (max-width: 767px) {
     header {
@@ -123,6 +129,10 @@ body {
       min-height: auto;
       text-align: center;
       flex-direction: column; /* Altera a direção dos elementos para empilhá-los verticalmente */
+    }
+
+    .header-logo:hover{
+      cursor: pointer;
     }
   
     .search-bar {
@@ -150,6 +160,7 @@ body {
   main {
     background-color: #F2F2F2; /* Altera a cor de fundo */
     padding: 20px;
+    transition: margin-left 0.5;
   }
   
   .sections-container {
@@ -191,6 +202,7 @@ body {
   .title {
     text-align: center;
     margin-bottom: 40px;
+    padding-top: 20px;
   }
   
   .topics-container {
@@ -229,12 +241,6 @@ body {
 
 }
 
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -265,7 +271,7 @@ input[type="checkbox"]:checked ~ nav
 }
 
 a{
-
+  
   display: block;
   padding: 20px 5px;
   color: #FFF;
