@@ -5,20 +5,63 @@
   <title>Turismo em Joinville</title>
   <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   <script src="script.js"></script>
+
+<style>
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  background-color: #76AF50;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+
+nav a {
+  color: white;
+  font-size: 25px;
+  display: block;
+  padding: 12px 10px 12px 32px;
+}
+
+nav a:hover{
+  color:#76AF50;
+  background-color: white;
+}
+
+</style>
+
 </head>
 <body>
-  <header>
+  <header id="cabecalho">
       <div class="header-container">
-        <img src="./imagens/tresriscos.png" alt="Logo" class="header-logo">
+        <img src="./imagens/tresriscos.png" alt="Logo" class="header-logo" onclick="abrirMenuLateral()">
         <div class="search-bar">
           <input type="text" class="search-input" placeholder="Pesquisar por outra cidade">
           <button class="search-button">Pesquisar</button>
         </div>
       </div>
     </header>
-  <h1 class="title">Joinville</h1> <!-- Movido o título para cima da tag <main> -->
 
-  <main>
+    <nav id="menuLateral">
+
+      <a href="#" onclick="fecharMenuLateral()"> Fechar</a>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Contato</a>
+  
+    </nav>
+
+  <h1 class="title">Joinville</h1> 
+
+  <main id="conteudo">
 
     <div class="sections-container">
     <div class="section" id="culinaria">
@@ -190,8 +233,6 @@
     </div>
   </div>
 
- 
-
   </main>
 
   <footer>Agencia Turismo - Todos os direitos Reservados - 2023 &copy
@@ -200,7 +241,5 @@
     <p>Contate nos: (47) 4002-8922 &#9742</p>
   </footer>
 
-
-  
 </body>
 </html>
