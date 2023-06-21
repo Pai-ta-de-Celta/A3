@@ -209,6 +209,8 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+
+    
   }
   
   .topic-text {
@@ -285,3 +287,19 @@ label{
   z-index: 1;
 }
 
+
+.Imgdiv{
+ width: 320px;
+ height: 210px;
+ display: inline-block;
+ left: 43px;
+ position: relative;
+
+
+}
+
+footer{
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: #F2F2F2
+}
